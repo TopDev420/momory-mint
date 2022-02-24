@@ -79,7 +79,7 @@ const config = {
   tabFocus: true
 }
 
-export const Explanation = (props) => {
+export const Explanation = () => {
   return (
     <div id="explanation">
       <div className="contain">

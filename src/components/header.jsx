@@ -1,6 +1,6 @@
 export const Header = (props) => {
   return (
-    <header id="header">
+    <header id="header" className="scroller">
       <div className="intro">
         <div className="overlay">
           <div className="contain">

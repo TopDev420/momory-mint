@@ -1,5 +1,5 @@
 import { FaShieldAlt, FaSimplybuilt, FaSketch } from "react-icons/fa"
-export const Features = (props) => {
+export const Features = () => {
   return (
     <div id="features">
       <div className="contain">

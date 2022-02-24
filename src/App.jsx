@@ -10,6 +10,8 @@ import { Services } from "./components/services"
 import { Guid } from "./components/guid"
 import { Explanation } from "./components/explanation"
 import { Contact } from "./components/contact"
+import { Footer } from "./components/footer"
+import { Dashboard } from "./pages/Dashboard"
 import JsonData from "./data/data.json"
 import SmoothScroll from "smooth-scroll"
 import "./App.css"
@@ -26,23 +28,11 @@ const App = () => {
     setLandingPageData(JsonData)
   }, [])
 
-  const handleScroll = (e) => {
-    console.log(window.pageYOffset)
-  }
-
   return (
-    <div onScroll={handleScroll}>
+    <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      <Gallery />
-      <Announce data={landingPageData.Announce} />
-      <Features />
-      <Launch data={landingPageData.Launch} />
-      <Services />
-      <Guid />
-      <Explanation />
-      <Contact />
+      <Dashboard />
+      <Footer />
     </div>
   )
 }

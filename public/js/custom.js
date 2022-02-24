@@ -3,7 +3,7 @@ $(document).ready(function () {
         const scroll = $(window).scrollTop();
 
         if (scroll < 50) {
-            $("#header").css({
+            $(".scroller").css({
                 "margin-top": "120px",
                 'transition': ".4s ease-in-out"
             });
@@ -18,7 +18,7 @@ $(document).ready(function () {
                 "height": "54px",
                 'transition': ".4s ease-in-out"
             });
-            $("#header").css({
+            $(".scroller").css({
                 "margin-top": "80px",
                 'transition': ".4s ease-in-out"
             });

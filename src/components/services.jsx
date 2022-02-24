@@ -1,6 +1,6 @@
 import { FaCircleNotch, FaEye, FaClock } from "react-icons/fa"
 
-export const Services = (props) => {
+export const Services = () => {
   return (
     <div id="services" className="text-center">
       <div className="contain">

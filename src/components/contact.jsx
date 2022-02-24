@@ -8,7 +8,7 @@ const initialState = {
   message: "",
   verify: ""
 }
-export const Contact = (props) => {
+export const Contact = () => {
   const [{ name, email, message, verify }, setState] = useState(initialState)
   const [num1, setnum1] = useState(0)
   const [num2, setnum2] = useState(0)
@@ -108,18 +108,6 @@ export const Contact = (props) => {
                 </div>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div className="footer-bottom">
-          <div className="footer-info">
-            All rights reserved 2022. Visible Things
-          </div>
-          <div className="social">
-            <a href="https://www.instagram.com/the_memory_mint_nft/">
-              <FaInstagram />
-            </a>
           </div>
         </div>
       </div>

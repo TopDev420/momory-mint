@@ -1,4 +1,4 @@
-export const Guid = (props) => {
+export const Guid = () => {
   return (
     <div id="guid">
       <div className="vault">
