@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 import { FaInstagram } from "react-icons/fa"
 
@@ -19,8 +20,10 @@ export const Navigation = () => {
       <div className="navbar-bottom">
         <div className="contain" id="navBottom">
           <div className="logo">
-            <a href="http://18.236.89.95/">
-              <img src="img/logo.png" id="logo"></img>
+            <a>
+              <Link to="/">
+                <img src="img/logo.png" id="logo"></img>
+              </Link>
             </a>
           </div>
           <div className="navbar-list">
@@ -30,7 +33,7 @@ export const Navigation = () => {
             >
               <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <a href="#contact" className="page-scroll">
+                  <a href="/" className="page-scroll">
                     Home
                   </a>
                 </li>
