@@ -1,4 +1,231 @@
 #sales {
   background-color: #35005b;
-  width: 90%;
+  margin-top: 120px;
+  .contain {
+    position: relative;
+    font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
+    .content1 {
+      padding: 80px 60px 0;
+      .title {
+        color: #707070;
+        width: 404px;
+        font-size: 37px;
+        font-weight: bold;
+        padding: 10px 0;
+        border-bottom: 1px solid #707070;
+      }
+      .paragraph {
+        color: #707070;
+        font-size: 60px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        letter-spacing: -3.9px;
+      }
+    }
+    .content2 {
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      max-width: 650px;
+      margin: 30px 0 90px 100px;
+      .title {
+        font-weight: 500;
+        padding: 10px 0;
+      }
+      .paragraph {
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    .content3 {
+      margin-left: 80px;
+      margin-bottom: 100px;
+      .title {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        letter-spacing: 1px;
+      }
+      .paragraph1 {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.5;
+        padding-bottom: 15px;
+        line-height: 30px;
+      }
+      .paragraph2 {
+        font-size: 15px;
+        width: 70%;
+      }
+    }
+    .content4 {
+      .service {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        .pricing-table {
+          width: 40%;
+          display: flex;
+          & > div {
+            width: 50%;
+            align-self: center;
+          }
+          .header {
+            width: 100%;
+            background-color: #2ea3f2;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+
+            .title {
+              color: #fff;
+              margin: 0;
+              padding: 0;
+              padding-bottom: 5px;
+              font-size: 18px;
+              line-height: 1em;
+              font-weight: 500;
+            }
+            .paragraph {
+              color: #fff;
+              font-size: 10px;
+              line-height: 10px;
+              display: block;
+              font-weight: 500;
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .content-top {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-bottom: 1px solid #bebebe;
+            padding-top: 17px;
+            padding-bottom: 30px;
+            color: #999;
+            font-size: 12px;
+            font-weight: 400;
+            & > span:nth-child(2) {
+              font-size: 50px;
+              line-height: 1.03em;
+              font-weight: 300;
+              color: #2ea3f2;
+            }
+            & > span:nth-child(3) {
+              align-self: self-end;
+            }
+          }
+          .content-bottom {
+            padding: 20px;
+            background-color: #fff;
+            text-align: left;
+            position: relative;
+            ul {
+              list-style: none;
+              padding: 0;
+              line-height: inherit;
+              li {
+                padding-left: 10px;
+                padding-bottom: 15px;
+                span {
+                  color: black;
+                  font-size: 10px;
+                  line-height: 1;
+                  position: relative;
+                }
+                span::before {
+                  border-style: solid;
+                  border-width: 3px;
+                  content: "";
+                  left: -14px;
+                  position: absolute;
+                  top: 9px;
+                  border-radius: 3px;
+                  border-color: #9ea3f2;
+                }
+              }
+            }
+          }
+          .content-btn {
+            text-align: center;
+            background-color: #fff;
+            color: #2ea3f2;
+            padding: 15px 0;
+            .btn-custom {
+              color: #2ea3f2;
+              line-height: 1.7em !important;
+              border: #2ea3f2 3px solid;
+              border-radius: 3px;
+              font-size: 12px;
+              font-family: "Raleway", sans-serif;
+              font-weight: 500;
+              text-align: center;
+              padding: 0.3em 1em !important;
+              transition: all 0.5s linear;
+              padding: 0;
+              margin: 0;
+              padding-bottom: 15px;
+            }
+            .btn-custom:active,
+            .btn-custom:hover,
+            .btn-custom:focus {
+              border: 3px solid transparent;
+              background-color: #f2f2f2;
+              text-decoration: none;
+            }
+          }
+          .right-table {
+            .header {
+              background-color: #bebebe;
+            }
+          }
+        }
+      }
+      #serviceKiss {
+        margin-bottom: 300px;
+      }
+      #serviceEyes {
+        margin-bottom: 150px;
+      }
+    }
+    .content5 {
+      padding: 5%;
+      font-size: 25px;
+      line-height: 35px;
+      color: #fff;
+      font-weight: 300;
+      & > div {
+        display: grid;
+
+        ul {
+          padding-left: 25px;
+          list-style: disc;
+        }
+      }
+      .series {
+        margin-bottom: 30px;
+      }
+      .collection {
+        margin-bottom: 50px;
+      }
+      .roadmap {
+        margin-bottom: 50px;
+      }
+    }
+    .avatar {
+      width: 40%;
+      height: 600px;
+      position: absolute;
+      top: 150px;
+      right: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      // background-image: url(../img/JLoDess.png);
+    }
+  }
 }

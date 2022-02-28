@@ -1,18 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Navigation } from "./components/navigation"
-import { Header } from "./components/header"
-import { About } from "./components/about"
-import { Gallery } from "./components/gallery"
-import { Announce } from "./components/announce"
-import { Features } from "./components/features"
-import { Launch } from "./components/launch"
-import { Services } from "./components/services"
-import { Guid } from "./components/guid"
-import { Explanation } from "./components/explanation"
-import { Contact } from "./components/contact"
 import { Footer } from "./components/footer"
 import { Dashboard } from "./pages/Dashboard"
-import JsonData from "./data/data.json"
+import { Sales } from "./pages/Sales"
 import SmoothScroll from "smooth-scroll"
 import "./App.css"
 
@@ -22,18 +13,17 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 })
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({})
-
-  useEffect(() => {
-    setLandingPageData(JsonData)
-  }, [])
-
   return (
-    <div>
-      <Navigation />
-      <Dashboard />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/sommer" element={<Sales />} />
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 

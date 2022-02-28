@@ -309,6 +309,9 @@ header .intro-text {
   line-height: 1em;
   font-weight: 500;
 }
+#about .about-text a {
+  color: #fff;
+}
 #about .about-text .img {
   text-align: center;
   margin-left: 2%;
