@@ -217,15 +217,86 @@
         margin-bottom: 50px;
       }
     }
-    .avatar {
+    .gallery {
       width: 40%;
       height: 600px;
       position: absolute;
-      top: 150px;
+      top: 170px;
       right: 0;
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url(../img/JLoDess.png);
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #sales {
+    .contain {
+      .content1 {
+        padding: 60px 20px 0;
+      }
+      .content2 {
+        margin: 20px auto 50px;
+      }
+      .content4 {
+        .service {
+          .pricing-table {
+            width: 60%;
+          }
+        }
+        #serviceKiss {
+          margin-bottom: 70px;
+        }
+        #serviceEyes {
+          margin-bottom: 30px;
+        }
+      }
+      .gallery {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #sales {
+    .contain {
+      .content1 {
+        padding: 20px 20px 0;
+      }
+      .content2 {
+        margin: 20px 20px 50px;
+      }
+      .content3 {
+        margin: 0px 30px;
+        margin-bottom: 80px;
+        .paragraph2 {
+          width: 100%;
+        }
+      }
+      .content4 {
+        .service {
+          display: grid;
+          text-align: center;
+          .pricing-table {
+            margin: 0 auto;
+            width: 80%;
+          }
+          .pricing-view {
+            margin: 50px 0;
+          }
+        }
+        #serviceKiss {
+          margin-bottom: 70px;
+        }
+        #serviceEyes {
+          margin-bottom: 30px;
+        }
+      }
+      .gallery {
+        width: 80%;
+      }
     }
   }
 }

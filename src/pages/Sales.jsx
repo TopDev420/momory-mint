@@ -302,7 +302,7 @@ export const Sales = () => {
             </ul>
           </div>
         </div>
-        <div className="avatar"></div>
+        <div className="gallery"></div>
       </div>
     </div>
   )

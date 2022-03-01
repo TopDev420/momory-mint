@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
 import { FaInstagram } from "react-icons/fa"
 
@@ -20,10 +19,8 @@ export const Navigation = () => {
       <div className="navbar-bottom">
         <div className="contain" id="navBottom">
           <div className="logo">
-            <a>
-              <Link to="/">
-                <img src="img/logo.png" id="logo"></img>
-              </Link>
+            <a href="/">
+              <img src="img/logo.png" id="logo"></img>
             </a>
           </div>
           <div className="navbar-list">
