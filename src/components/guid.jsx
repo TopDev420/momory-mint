@@ -1,6 +1,6 @@
 export const Guid = () => {
   return (
-    <div id="guid">
+    <div id="guide">
       <div className="vault">
         <div className="about-text">
           <div className="title">
